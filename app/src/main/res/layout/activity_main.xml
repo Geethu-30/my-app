@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnStop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnRecord"
+        android:layout_width="122dp"
+        android:layout_height="126dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="602dp"
+        app:srcCompat="@drawable/ic_baseline_keyboard_voice_24"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="594dp" />
+
+    <ImageButton
+        android:id="@+id/btnPlay"
+        android:layout_width="122dp"
+        android:layout_height="126dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="611dp"
+        android:onClick="onClick"
+        app:layout_constraintStart_toEndOf="@+id/btnRecord"
+        app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+        tools:layout_editor_absoluteY="596dp" />
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="122dp"
+        android:layout_height="126dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="602dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnRecord"
+        app:srcCompat="@drawable/ic_baseline_stop_24"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="2dp"
+        android:layout_height="18dp"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+
+</RelativeLayout>
